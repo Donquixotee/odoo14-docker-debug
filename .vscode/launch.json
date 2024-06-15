@@ -15,7 +15,7 @@
           "remoteRoot": "/usr/lib/python3/dist-packages/odoo"
         },
         {
-          "localRoot": "${workspaceFolder}/custom_addons",
+          "localRoot": "${workspaceFolder}/extra-addons",
           "remoteRoot": "/mnt/extra-addons"
         }
       ],

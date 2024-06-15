@@ -27,7 +27,7 @@ services:
       - DB_PASSWORD=odoo
     volumes:
       - ./odoo.conf:/etc/odoo/odoo.conf  # Mount the local odoo.conf file
-      - ./custom_addons:/mnt/extra-addons  # Mount your custom addons
+      - ./extra-addons:/mnt/extra-addons  # Mount your custom addons
       - ./odoo-14.0:/usr/lib/python3/dist-packages/odoo  # Mount Odoo source code
       - ./filestore:/var/lib/odoo
     command: >
