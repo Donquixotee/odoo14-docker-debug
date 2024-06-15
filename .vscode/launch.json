@@ -19,7 +19,9 @@
           "remoteRoot": "/mnt/extra-addons"
         }
       ],
-      "justMyCode": false
+      "justMyCode": false,
+      "preLaunchTask": "Restart Docker Compose",
+      "postDebugTask": "Stop Docker Compose"
     }
   ]
 }
