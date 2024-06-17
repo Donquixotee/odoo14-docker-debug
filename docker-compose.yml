@@ -29,6 +29,6 @@ services:
       - ./odoo.conf:/etc/odoo/odoo.conf  # Mount the local odoo.conf file
       - ./extra-addons:/mnt/extra-addons  # Mount your custom addons
       - ./odoo-14.0:/usr/lib/python3/dist-packages/odoo  # Mount Odoo source code
-      - ./filestore:/var/lib/odoo
-    command: >
-      bash -c "python3 -m debugpy --listen 0.0.0.0:5678 --wait-for-client /usr/lib/python3/dist-packages/odoo/odoo-bin -c /etc/odoo/odoo.conf --dev xml"
+      - ./filestore:/var/lib/odoo # File store
+    command:  > # comand to run odoo server using debugpy library to be able to debug code 
+      bash -c "python3 -m debugpy --listen 0.0.0.0:5678 --wait-for-client /usr/lib/python3/dist-packages/odoo/odoo-bin -c /etc/odoo/odoo.conf --dev xml" 
