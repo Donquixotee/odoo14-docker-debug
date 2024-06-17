@@ -15,14 +15,16 @@ This repository contains a setup for debugging Odoo 14 using Docker Compose and 
 
 ## Setup
 
-1. Clone the repository:
+1. Download odoo14 source code from odoo oficial repo
+
+2. Clone the repository:
    ```sh
    git clone https://github.com/yourusername/odoo14-docker-debug.git
    cd odoo14-docker-debug
-2. Build and start the Docker containers:
+3. Build and start the Docker containers:
    ```sh
    docker-compose up --build
-3. Open the project in Visual Studio Code:
+4. Open the project in Visual Studio Code:
    ```sh
    code .
-4. Start debugging by selecting the Python: Remote Attach configuration in the VS Code debugger.
+5. Start debugging by selecting the Python: Remote Attach configuration in the VS Code debugger.
