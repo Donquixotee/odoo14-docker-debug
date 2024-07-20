@@ -15,7 +15,7 @@ services:
     depends_on:
       - db
     ports:
-      - "8069:8069"
+      - "8014:8069"
       - "5678:5678"  # Port for remote debugging
     environment:
       - HOST=db
